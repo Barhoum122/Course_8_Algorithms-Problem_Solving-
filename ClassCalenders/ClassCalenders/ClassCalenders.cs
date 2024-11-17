@@ -456,7 +456,8 @@ namespace ClassCalenders
         {
             _structDate date;
             string[] vdate;
-            vdate = dateString.Split("/");
+            char[] charArray={'/','-','.'};
+            vdate = dateString.Split(charArray);
 
             date.Day = short.Parse(vdate[0]);
             date.Month = short.Parse(vdate[1]);
@@ -467,6 +468,28 @@ namespace ClassCalenders
         string DataToString(_structDate date)
         {
             return date.Day + "/" + date.Month + "/" + date.Year;
+
+        }
+        string ReplaceWordInString(string _input,string _stringToReplace, string _replaceTo)
+        {
+            int pos=_input.IndexOf(_stringToReplace);//find string area while replaced
+            while(pos != -1)
+            {
+                _input = _input.Remove(pos, _stringToReplace.Length).Insert(pos,_replaceTo);//deleted old string,and replaced with new string
+                
+                pos = _input.IndexOf(_stringToReplace,pos +_replaceTo.Length);
+            }
+            return _input;
+
+        }
+        string FormatDate(_structDate Date,string DateFormat = "dd/mm/yyyy")
+        {
+
+            string FormatDateString = "";
+            FormatDateString = ReplaceWordInString(DateFormat,"dd",Date.Day.ToString());
+            FormatDateString = ReplaceWordInString(FormatDateString, "mm",Date.Month.ToString());
+            FormatDateString = ReplaceWordInString(FormatDateString, "yyyy",Date.Year.ToString());
+            return FormatDateString;
 
         }
 
@@ -968,15 +991,8 @@ namespace ClassCalenders
 
         }
         //Proplems-63-64____________________________________________________________________________
-        public void ExecutingProplem63()
-        {
-            Console.WriteLine("\n Enter The Date: ");
-            _structDate date = ReadFullDate();
-
-            if (IsValideDate(date)) Console.WriteLine("\n Yes, Is Valide Date: ");
-            else Console.WriteLine("\n No, Is Not Valide Date: ");
-        }
-        public void ExecutingProplem64()
+       
+        public void ExecutingProplem63_64()
         {
                 Console.Write("\n Enter The Date like This Format dd/mm/yy: ");
                string dateString = Console.ReadLine()!;
@@ -987,6 +1003,23 @@ namespace ClassCalenders
             Console.Write("Date String: " + DataToString(Date));
 
         }
+         //Proplems-65____________________________________________________________________________
+       
+        public void ExecutingProplem65()
+        {
+                Console.Write("\n Enter The Date like This Format dd/mm/yyyy: ");
+               string dateString = Console.ReadLine()!;
+
+           _structDate Date = StringToData(dateString);
+            Console.WriteLine("Day: " + Date.Day + "\nMonth: " + Date.Month + "\nYear: " + Date.Year);
+           
+            Console.Write("\nFormat Date: " + FormatDate(Date));
+            Console.Write("\nFormat Date: " + FormatDate(Date,"mm/dd/yyyy"));
+            Console.Write("\nFormat Date: " + FormatDate(Date, "yyyy/mm/dd"));
+          
+
+        }
+
 
     }
 }
