@@ -1,0 +1,15 @@
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ClassCalenders.exe
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ClassCalenders.deps.json
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ClassCalenders.runtimeconfig.json
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ClassCalenders.dll
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ref\ClassCalenders.dll
+D:\Project File C#\ClassCalenders\ClassCalenders\bin\Debug\net6.0\ClassCalenders.pdb
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.csproj.AssemblyReference.cache
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.AssemblyInfoInputs.cache
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.AssemblyInfo.cs
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.csproj.CoreCompileInputs.cache
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.dll
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ref\ClassCalenders.dll
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.pdb
+D:\Project File C#\ClassCalenders\ClassCalenders\obj\Debug\net6.0\ClassCalenders.genruntimeconfig.cache
