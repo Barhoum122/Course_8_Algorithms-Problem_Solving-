@@ -452,7 +452,23 @@ namespace ClassCalenders
 
         }
 
+        _structDate StringToData(string dateString)
+        {
+            _structDate date;
+            string[] vdate;
+            vdate = dateString.Split("/");
 
+            date.Day = short.Parse(vdate[0]);
+            date.Month = short.Parse(vdate[1]);
+            date.Year = short.Parse(vdate[2]);
+            return date;
+
+        }
+        string DataToString(_structDate date)
+        {
+            return date.Day + "/" + date.Month + "/" + date.Year;
+
+        }
 
 
         //Proplems-(8)Print a Month______________________________________
@@ -720,6 +736,7 @@ namespace ClassCalenders
                 else  // if false exe next line
                 {
                     date.Month--;
+      
                     date.Day = NumberOfDayInMonth(date.Month, date.Year);
 
                 }
@@ -937,6 +954,7 @@ namespace ClassCalenders
             /* Console.WriteLine("End date _Period 2: " + period1.EndDate.Day + "/" + period1.EndDate.Month + "/" + period1.EndDate.Year);*/
 
         }
+
         //Proplems-62____________________________________________________________________________
         public void ExecutingProplem62()
         {
@@ -947,6 +965,26 @@ namespace ClassCalenders
             else Console.WriteLine("\n No, Is Not Valide Date: ");
 
             /* Console.WriteLine("End date _Period 2: " + period1.EndDate.Day + "/" + period1.EndDate.Month + "/" + period1.EndDate.Year);*/
+
+        }
+        //Proplems-63-64____________________________________________________________________________
+        public void ExecutingProplem63()
+        {
+            Console.WriteLine("\n Enter The Date: ");
+            _structDate date = ReadFullDate();
+
+            if (IsValideDate(date)) Console.WriteLine("\n Yes, Is Valide Date: ");
+            else Console.WriteLine("\n No, Is Not Valide Date: ");
+        }
+        public void ExecutingProplem64()
+        {
+                Console.Write("\n Enter The Date like This Format dd/mm/yy: ");
+               string dateString = Console.ReadLine()!;
+
+           _structDate Date = StringToData(dateString);
+            Console.WriteLine("Day: " + Date.Day + "\nMonth: " + Date.Month + "\nYear: " + Date.Year);
+           
+            Console.Write("Date String: " + DataToString(Date));
 
         }
 

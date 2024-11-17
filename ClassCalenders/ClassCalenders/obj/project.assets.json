@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project File C#\\ClassCalenders\\ClassCalenders\\ClassCalenders.csproj",
+      "projectUniqueName": "D:\\Project File C#\\Corce_Algorithms_And_Proplem_level_8\\ClassCalenders\\ClassCalenders\\ClassCalenders.csproj",
       "projectName": "ClassCalenders",
-      "projectPath": "D:\\Project File C#\\ClassCalenders\\ClassCalenders\\ClassCalenders.csproj",
+      "projectPath": "D:\\Project File C#\\Corce_Algorithms_And_Proplem_level_8\\ClassCalenders\\ClassCalenders\\ClassCalenders.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Project File C#\\ClassCalenders\\ClassCalenders\\obj\\",
+      "outputPath": "D:\\Project File C#\\Corce_Algorithms_And_Proplem_level_8\\ClassCalenders\\ClassCalenders\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
